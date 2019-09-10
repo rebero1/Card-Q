@@ -1,4 +1,14 @@
-#%% 
+'''
+
+The  following model is used to indetify between cat and  a dog in a picture
+
+The datasets can be found on kaggle and can be replaced  in the placeholder location
+
+
+'''
+
+
+
 from keras.preprocessing import image
 import matplotlib
 import matplotlib.pyplot as plot
@@ -11,7 +21,7 @@ from keras import activations as acti
 from keras import  initializers  as init
 import numpy as np
 
-#%%
+
 
 
 def  model_making():
@@ -91,9 +101,10 @@ data_gen=keras.preprocessing.image.ImageDataGenerator(rescale=1./255,
 rotation_range=40,width_shift_range=.2,
 height_shift_range=.2,shear_range=.2,zoom_range=.2,horizontal_flip=True)
 
- 
+ # Provide  the location of the cats and dog directory. 
+  
 train = data_gen.flow_from_directory(
-    "/Users/reberoprince/Downloads/cats_and_dogs_small/train",
+    "LOCATION",
        target_size=(150, 150), batch_size=3, class_mode='binary'
 )
 
