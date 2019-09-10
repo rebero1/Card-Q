@@ -124,7 +124,7 @@ plot_graph(history)
 
 #%%
 from keras.preprocessing import image
-imag = '/Users/reberoprince/Desktop/obama.jpg'
+imag = 'image.jpg'
 img = image.load_img(imag, target_size=(150, 150))
 img = image.img_to_array(img)
  
