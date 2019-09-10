@@ -4,6 +4,8 @@ The  following model is used to indetify between cat and  a dog in a picture
 
 The datasets can be found on kaggle and can be replaced  in the placeholder location
 
+We shall be using functional programminig to have  flexibility in desingning our model .
+
 
 '''
 
